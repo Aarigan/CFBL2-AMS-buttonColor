@@ -37,7 +37,7 @@ button {
   font-size: 1.125em;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
   text-transform: uppercase;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -47,6 +47,7 @@ button {
 .button1 {
   color: var(--clr-gray);
   background: linear-gradient(135deg,#2ffd14, #01e3ef, #fcf23b, #c23bfc);
+  animation: neon-color 2s linear infinite;
 }
 
 .button1:hover {
@@ -60,6 +61,7 @@ button {
   color: var(--clr-white);
   background: linear-gradient(135deg, #0144ef,  #c23bfc);
   border-radius: .75em;
+  animation: neon-color 1.5s linear infinite;
 }
 
 .button2:hover {
@@ -73,6 +75,7 @@ button {
   color: var(--clr-gray);
   background: linear-gradient(#90fc82, #72f3fa, #faf595, #e3adfa);
   border-radius: 1.5em;
+  animation: neon-color 1.8s linear infinite;
 }
 
 .button3:hover {
@@ -86,6 +89,7 @@ button {
   color: var(--clr-white);
   background: linear-gradient(135deg, #00288f, #5886fa);
   border-radius: .625em 6.25em / 7.5em;
+  animation: neon-color 1.5s linear infinite;
 }
 
 .button4:hover {
@@ -102,6 +106,7 @@ button {
   color: var(--clr-gray);
   background: linear-gradient(135deg, #2ffd14, #01e3ef 5%, #fcf23b, #c23bfc);
   font-size: .015em;
+  animation: neon-color 1.5s linear infinite;
 }
 
 .button5:hover {
@@ -109,4 +114,14 @@ button {
   transition-delay: .1s;
   background: radial-gradient(#fcf23b 10%, #c23bfc, #01e3ef, #2ffd14);
   transform: rotate(360deg);
+}
+
+ @keyframes neon-color {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
 }
