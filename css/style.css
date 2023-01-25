@@ -107,7 +107,7 @@ button {
   border-radius: 50%;
   color: var(--clr-gray);
   background: linear-gradient(135deg, #2ffd14, #01e3ef 5%, #fcf23b, #c23bfc);
-  font-size: .015em;
+  font-size: 1em;
   animation: neon-color 1.5s linear infinite;
 }
 
